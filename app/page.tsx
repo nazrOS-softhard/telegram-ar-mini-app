@@ -23,7 +23,6 @@ export default function ARScanner() {
     startCamera();
   }, []);
 
-  // Имитация AR-распознавания (в реальности здесь будет MindAR)
   const handleDetection = () => {
     setStatus("🎉 Артефакт активирован!");
   };
@@ -40,8 +39,6 @@ export default function ARScanner() {
       <div className="absolute bottom-10 left-0 w-full z-20 flex justify-center px-4">
         <div className="bg-black/70 px-6 py-4 rounded-2xl text-center backdrop-blur-md border border-white/20 max-w-sm">
           <p className="text-sm">{status}</p>
-          
-          {/* Кнопка для теста (в реальности её не будет) */}
           <button 
             onClick={handleDetection}
             className="mt-4 bg-purple-600 px-6 py-2 rounded-full text-sm"
